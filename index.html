@@ -1,13 +1,116 @@
-<!DOCTYPE html><html lang="en"><head>
-  <meta charset="utf-8">
-  <base href="./">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <title>REV Export</title>
-<style>*,:before,:after{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}:before,:after{--tw-content:""}html{line-height:1.5;-webkit-text-size-adjust:100%;tab-size:4;font-family:Inter,ui-sans-serif,system-ui,-apple-system,system-ui,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-feature-settings:normal;font-variation-settings:normal}body{margin:0;line-height:inherit}*,:before,:after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(63 131 248 / .5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }</style><link rel="stylesheet" href="styles.5b3856b073b73c4f.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.5b3856b073b73c4f.css"></noscript></head>
-<body>
-  <app-root></app-root>
-<script src="runtime.63aa452a229c5fcb.js" type="module"></script><script src="polyfills.4e8cc0fceb8957af.js" type="module"></script><script src="main.c6aa84402fc75ff1.js" type="module"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" >
+    <title>Lab 5</title>
+</head>
+<body >
+    <header>
+        <h1 class="textCenter">About Us</h1>
+        <p>Bienvenue sur la page "About Us" de ITComp. Nous sommes une entreprise innovante spécialisée dans La Formation, Développement et Integration. Notre mission est de vous donner une meilleure expérience dans le monde de développement des sites Web.</p>
+    </header>
 
-</body></html>
+    <section class="entete">
+        <article>
+            <div class="textCenter">
+                <img  src="./assets/img/img1.jpg" alt="Description de l'image">
+            </div>
+            <ul style=" padding: 0;" class="textCenter">
+                <li ><a  href="#">HTML</a></li>
+                <li ><a  href="#">CSS</a></li>
+                <li ><a  href="#">JavaScript</a></li>
+            </ul>
+        </article>
+        <article class="textCenter">
+            <h3 >Formation HTML, CSS et JS</h3>
+            <div>
+                <div>Comprendre les bases de HTML</div>
+                <div>Styler les pages avec CSS</div>
+                <div>Interactivité avec JavaScript</div>
+            </div>
+        </article>
+    </section>
+  
+    <h2 style="text-transform: uppercase;" class="textCenter">Nous Contacter </h2>
+    <section class="contact" style="color:white;">
+        
+        <form action="/submit" method="post" >
+
+
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required> <br>
+    
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required><br>
+    
+            <label for="birthdate">Date de naissance :</label>
+            <input type="date" id="birthdate" name="birthdate" required><br>
+    
+            <label for="website">Site Web :</label>
+            <input type="url" id="website" name="website" required><br>
+    
+            <label for="color">Couleur :</label>
+            <input type="color" id="color" name="color" required><br>
+    
+            <label for="phone">Téléphone :</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Format : 123-456-7890" required><br>
+    
+            <label for="age">Âge :</label>
+            <input type="range" id="age" name="age" min="18" max="99" value="18"><br>
+    
+    
+            <label for="search">Recherche :</label>
+            <input type="search" id="search" name="search" placeholder="Rechercher..."><br>
+    
+            
+            
+            <label for="pays">Choisissez un pays :</label>
+            <select id="pays" name="pays">
+                <option value="france">Algerie</option>
+                <option value="espagne">Espagne</option>
+                <option value="italie">Italie</option>
+                <option value="allemagne">Allemagne</option>
+            </select><br>
+
+            <label for="fname">Commentaires :</label><br>
+            <textarea name="commentaire" rows="4" cols="50">Écrivez votre commentaire ici .</textarea><br>
+
+            <button type="submit">Envoyer</button>
+
+        </form>
+    
+    <div>
+        <h2>Contact Informations</h2>
+
+    
+        <p style="font-size: 15px; ">N'hésitez pas à nous contacter pour toute question ou collaboration.<span style="color: orange; font-weight: 600;">sur Mail</span></p>
+        <table border="0">
+            <tr >
+                <td style="text-align: right;">Adresse</td>
+                <td>:</td>
+                <td>5 rue de garidi, Alger</td>
+            </tr>
+            <tr>
+                <td style="text-align: right;">Mail</td>
+                <td>:</td>
+                <td>islem@gmail.com</td>
+            </tr>
+            <tr>
+                <td style="text-align: right;">Telephone</td>
+                <td>:</td>
+                <td>+213 123 456 789</td>
+            </tr>
+        </table>
+    </div>
+    </section>
+    
+    <footer>
+        <p style="margin-top: 20px; padding: 20px;  text-align: center; background-color: #f4f4f4; font-size: 0.8em; font-family: 'Arial', sans-serif; color: #666;">Formation HTML/CSS/JS - © 2023 ITComp</p>
+    </footer>
+   
+
+</body>
+
+</html>
